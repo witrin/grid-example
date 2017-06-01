@@ -1,0 +1,15 @@
+<f:if condition="{form}">
+    <f:then>
+        <form id="LayoutController" action="{form.action}" method="post" name="dblistForm">
+            <h1>{title}</h1>
+            <f:format.raw>{form.content}</f:format.raw>
+        </form>
+        <f:format.raw>{form.after}</f:format.raw>
+        <script>var T3_THIS_LOCATION = '{form.action -> f:format.urlencode()}';</script>
+    </f:then>
+    <f:else>
+        <f:be.infobox title="{f:translate(key: 'LLL:EXT:wireframe_example/Resources/Private/Language/Resources/Private/Templates/Layout/index:info.title')}" iconName="info" state="-1">
+            {f:translate(key: 'LLL:EXT:wireframe_example/Resources/Private/Language/Resources/Private/Templates/Layout/index:info.message')}
+        </f:be.infobox>
+    </f:else>
+</f:if>

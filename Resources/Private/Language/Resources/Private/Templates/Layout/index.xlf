@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-14T00:00:00Z" product-name="wireframe-example">
+		<header/>
+		<body>
+			<trans-unit id="info.title">
+				<source>Web&#x3e;Blog module</source>
+			</trans-unit>
+			<trans-unit id="info.message">
+                <source>Please click the page title in the page tree to the left to create and edit posts. </source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

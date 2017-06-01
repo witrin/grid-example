@@ -1,0 +1,32 @@
+{
+  "name": "typo3/cms-wireframe-example",
+  "type": "typo3-cms-extension",
+  "description": "Showcase for the wireframe component.",
+  "homepage": "https://typo3.org",
+  "license": ["GPL-2.0+"],
+
+  "require": {
+    "typo3/cms-core": "*",
+    "typo3/cms-backend": "*",
+    "typo3/wireframe": "*",
+    "fluidtypo3/vhs": "*"
+  },
+  "replace": {
+    "wireframe_example": "*"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "TYPO3\\CMS\\WireframeExample\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TYPO3\\CMS\\WireframeExample\\Tests\\": "Tests/"
+    }
+  }
+}

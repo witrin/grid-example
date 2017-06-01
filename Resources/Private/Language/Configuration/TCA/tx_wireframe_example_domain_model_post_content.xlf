@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-11T00:00:00Z" product-name="wireframe-example">
+		<header/>
+		<body>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Post Content</source>
+			</trans-unit>
+			<trans-unit id="column.header" xml:space="preserve">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="column.hidden" xml:space="preserve">
+                <source>Post Content</source>
+            </trans-unit>
+            <trans-unit id="column.text" xml:space="preserve">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="column.position" xml:space="preserve">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="column.type" xml:space="preserve">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="column.media" xml:space="preserve">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="column.type.standard" xml:space="preserve">
+                <source>Standard</source>
+            </trans-unit>
+            <trans-unit id="column.type.text" xml:space="preserve">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="column.type.media" xml:space="preserve">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="palette.general" xml:space="preserve">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="palette.content" xml:space="preserve">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="palette.header" xml:space="preserve">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="palette.visibility" xml:space="preserve">
+                <source>Visibility</source>
+            </trans-unit>
+            <trans-unit id="tab.access" xml:space="preserve">
+                <source>Access</source>
+            </trans-unit>
+            <trans-unit id="tab.resources" xml:space="preserve">
+                <source>Resources </source>
+            </trans-unit>
+            <trans-unit id="palette.files" xml:space="preserve">
+                <source>Files</source>
+            </trans-unit>
+            <trans-unit id="palette.access" xml:space="preserve">
+                <source>Publish Dates and Access Rights</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

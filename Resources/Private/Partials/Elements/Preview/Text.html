@@ -1,0 +1,4 @@
+<f:if condition="{header}">
+    <strong>{header}</strong><br/>
+</f:if>
+<span>{text -> f:format.stripTags() -> f:format.crop(maxCharacters: 100, respectWordBoundaries: true)}</span>

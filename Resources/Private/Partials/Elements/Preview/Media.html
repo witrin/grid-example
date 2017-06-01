@@ -1,0 +1,14 @@
+<span xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+    <f:if condition="{header}">
+        <strong>{header}</strong><br/>
+    </f:if>
+    <f:alias map="{files: '{v:resource.record.fal(table: \'tx_wireframe_example_domain_model_post_content\', field: \'media\', uid: uid)}'}">
+        <f:if condition="{files -> f:count()} > 0">
+            <f:for each="{files}" as="file">
+                <f:image src="{file.uid}" treatIdAsReference="1" width="60" />
+            </f:for>
+            <br/>
+        </f:if>
+    </f:alias>
+    <span>{text -> f:format.stripTags() -> f:format.crop(maxCharacters: 100, respectWordBoundaries: true)}</span>
+</span>

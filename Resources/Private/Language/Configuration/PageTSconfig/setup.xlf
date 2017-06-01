@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-07-14T00:00:00Z" product-name="wireframe-example">
+		<header/>
+		<body>
+			<trans-unit id="group.general.header">
+				<source>Typical post content</source>
+			</trans-unit>
+			<trans-unit id="element.media.title">
+                <source>Media</source>
+            </trans-unit>
+			<trans-unit id="element.media.description">
+                <source>Any number of media wrapped right around a regular text element.</source>
+            </trans-unit>
+            <trans-unit id="element.text.title">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="element.text.description">
+                <source>A simple text element.</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
