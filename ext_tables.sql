@@ -1,7 +1,7 @@
 #
-# Table structure for table 'tx_wireframe_example_domain_model_post'
+# Table structure for table 'tx_grid_example_domain_model_post'
 #
-CREATE TABLE tx_wireframe_example_domain_model_post (
+CREATE TABLE tx_grid_example_domain_model_post (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -40,9 +40,9 @@ CREATE TABLE tx_wireframe_example_domain_model_post (
 );
 
 #
-# Table structure for table 'tx_wireframe_example_domain_model_post_content'
+# Table structure for table 'tx_grid_example_domain_model_post_content'
 #
-CREATE TABLE tx_wireframe_example_domain_model_post_content (
+CREATE TABLE tx_grid_example_domain_model_post_content (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,

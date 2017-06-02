@@ -7,7 +7,7 @@ return [
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
         'editlock' => 'editlock',
-        'title' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:title',
+        'title' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:title',
         'delete' => 'deleted',
         'versioningWS' => true,
         'versioning_followPages' => true,
@@ -144,15 +144,15 @@ return [
                         0
                     ]
                 ],
-                'foreign_table' => 'tx_wireframe_example_domain_model_post',
-                'foreign_table_where' => 'AND tx_wireframe_example_domain_model_post.pid=###CURRENT_PID### AND tx_wireframe_example_domain_model_post.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_grid_example_domain_model_post',
+                'foreign_table_where' => 'AND tx_grid_example_domain_model_post.pid=###CURRENT_PID### AND tx_grid_example_domain_model_post.sys_language_uid IN (-1,0)',
                 'default' => 0
             ]
         ],
         'title' => [
             'l10n_mode' => 'prefixLangTitle',
             'l10n_cat' => 'text',
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:column.title',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:column.title',
             'config' => [
                 'type' => 'input',
                 'size' => '50',
@@ -160,10 +160,10 @@ return [
             ]
         ],
         'content' => [
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:column.content',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:column.content',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' => 'tx_wireframe_example_domain_model_post_content',
+                'foreign_table' => 'tx_grid_example_domain_model_post_content',
                 'foreign_field' => 'parent',
                 'grid_area_field' => 'position'
             ]
@@ -172,12 +172,12 @@ return [
     'types' => [
         '0' => [
             'showitem' => '
-                    --palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:palette.general;general,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:palette.header;header,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:palette.content;content,
-				--div--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:tab.access,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:palette.visibility;visibility,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:palette.access;access
+                    --palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:palette.general;general,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:palette.header;header,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:palette.content;content,
+				--div--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:tab.access,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:palette.visibility;visibility,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:palette.access;access
 			'
         ]
     ],
@@ -199,7 +199,7 @@ return [
         ],
         'visibility' => [
             'showitem' => '
-				hidden;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post.xlf:column.hidden
+				hidden;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post.xlf:column.hidden
 			'
         ],
         'access' => [

@@ -1,4 +1,4 @@
-tx_grid.tx_wireframe_example_domain_model_post.content {
+tx_grid.tx_grid_example_domain_model_post.content {
     template {
         areas {
             1 {
@@ -11,21 +11,21 @@ tx_grid.tx_wireframe_example_domain_model_post.content {
     }
     presets {
         general {
-            header = LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/PageTSconfig/setup:group.general.header
+            header = LLL:EXT:grid_example/Resources/Private/Language/Configuration/PageTSconfig/setup:group.general.header
             show = *
             elements {
                 media {
                     iconIdentifier = content-textmedia
-                    title = LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.media.title
-                    description = LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.media.description
+                    title = LLL:EXT:grid_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.media.title
+                    description = LLL:EXT:grid_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.media.description
                     defaultValues {
                         type = media
                     }
                 }
                 text {
                     iconIdentifier = content-text
-                    title = LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.text.title
-                    description = LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.text.description
+                    title = LLL:EXT:grid_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.text.title
+                    description = LLL:EXT:grid_example/Resources/Private/Language/Configuration/PageTSconfig/setup:element.text.description
                     defaultValues {
                         type = text
                     }
@@ -34,7 +34,7 @@ tx_grid.tx_wireframe_example_domain_model_post.content {
         }
     }
     preview {
-        media = EXT:wireframe_example/Resources/Private/Partials/Elements/Preview/Media.html
-        text = EXT:wireframe_example/Resources/Private/Partials/Elements/Preview/Text.html
+        media = EXT:grid_example/Resources/Private/Partials/Elements/Preview/Media.html
+        text = EXT:grid_example/Resources/Private/Partials/Elements/Preview/Text.html
     }
 }

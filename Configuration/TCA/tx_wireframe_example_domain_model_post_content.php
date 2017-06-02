@@ -8,7 +8,7 @@ return [
         'cruser_id' => 'cruser_id',
         'editlock' => 'editlock',
         'hideTable' => true,
-        'title' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:title',
+        'title' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:title',
         'delete' => 'deleted',
         'type' => 'type',
         'versioningWS' => true,
@@ -149,28 +149,28 @@ return [
                         0
                     ]
                 ],
-                'foreign_table' => 'tx_wireframe_example_domain_model_post_content',
-                'foreign_table_where' => 'AND tx_wireframe_example_domain_model_post_content.pid=###CURRENT_PID### AND tx_wireframe_example_domain_model_post_content.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_grid_example_domain_model_post_content',
+                'foreign_table_where' => 'AND tx_grid_example_domain_model_post_content.pid=###CURRENT_PID### AND tx_grid_example_domain_model_post_content.sys_language_uid IN (-1,0)',
                 'default' => 0
             ]
         ],
         'type' => [
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.type',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.type.standard',
+                        'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.type.standard',
                         '--div--'
                     ],
                     [
-                        'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.type.text',
+                        'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.type.text',
                         'text',
                         'content-text'
                     ],
                     [
-                        'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.type.media',
+                        'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.type.media',
                         'media',
                         'content-textmedia'
                     ]
@@ -182,7 +182,7 @@ return [
         ],
         'position' => [
             'exclude' => 1,
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.position',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.position',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -210,7 +210,7 @@ return [
         'header' => [
             'l10n_mode' => 'prefixLangTitle',
             'l10n_cat' => 'text',
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.header',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.header',
             'config' => [
                 'type' => 'input',
                 'size' => '50',
@@ -218,7 +218,7 @@ return [
             ]
         ],
         'text' => [
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.text',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.text',
             'l10n_mode' => 'prefixLangTitle',
             'l10n_cat' => 'text',
             'config' => [
@@ -240,7 +240,7 @@ return [
             ]
         ],
         'media' => [
-            'label' => 'LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.media',
+            'label' => 'LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.media',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('media', [
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:media.addFileReference'
@@ -259,24 +259,24 @@ return [
         ],
         'text' => [
             'showitem' => '
-                    --palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.general;general,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.header;header,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.content;content,
-				--div--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:tab.access,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.visibility;visibility,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.access;access
+                    --palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.general;general,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.header;header,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.content;content,
+				--div--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:tab.access,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.visibility;visibility,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.access;access
 			'
         ],
         'media' => [
             'showitem' => '
-                    --palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.general;general,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.header;header,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.content;content,
-				--div--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:tab.resources,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.files;files,
-				--div--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:tab.access,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.visibility;visibility,
-					--palette--;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:palette.access;access
+                    --palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.general;general,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.header;header,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.content;content,
+				--div--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:tab.resources,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.files;files,
+				--div--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:tab.access,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.visibility;visibility,
+					--palette--;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:palette.access;access
 			'
         ]
     ],
@@ -304,7 +304,7 @@ return [
         ],
         'visibility' => [
             'showitem' => '
-				hidden;LLL:EXT:wireframe_example/Resources/Private/Language/Configuration/TCA/tx_wireframe_example_domain_model_post_content.xlf:column.hidden
+				hidden;LLL:EXT:grid_example/Resources/Private/Language/Configuration/TCA/tx_grid_example_domain_model_post_content.xlf:column.hidden
 			'
         ],
         'access' => [

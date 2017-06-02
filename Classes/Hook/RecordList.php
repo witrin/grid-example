@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\CMS\WireframeExample\Hook;
+namespace TYPO3\CMS\GridExample\Hook;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -53,9 +53,9 @@ class RecordList implements RecordListHookInterface
             unset($cells['primary']['edit']);
             unset($cells['edit']);
             $layout = GeneralUtility::makeInstance(UriBuilder::class)->buildUriFromModule(
-                'web_WireframeExamplePost',
+                'web_GridExamplePost',
                 [
-                    'tx_wireframeexample_web_wireframeexamplepost' => [
+                    'tx_gridexample_web_gridexamplepost' => [
                         'action' => 'edit',
                         'controller' => 'Layout',
                         'page' => $row['pid'],
@@ -67,7 +67,7 @@ class RecordList implements RecordListHookInterface
                 'record_edit',
                 [
                     'edit' => [
-                        'tx_wireframe_example_domain_model_post' => [
+                        'tx_grid_example_domain_model_post' => [
                             $row['uid'] => 'edit'
                         ]
                     ],

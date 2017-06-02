@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'TYPO3 Wireframe Example',
-    'description' => 'Showcase for the wireframe component.',
+    'title' => 'TYPO3 Grid Example',
+    'description' => 'Showcase for the grid component.',
     'category' => 'be',
     'state' => 'alpha',
     'uploadfolder' => 0,
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'php' => '7.0.0-7.0.99',
             'typo3' => '8.2.0-8.3.99',
-            'wireframe' => '1.0.0'
+            'grid' => '1.0.0'
         ],
         'conflicts' => [],
         'suggests' => [],

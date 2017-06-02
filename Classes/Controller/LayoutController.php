@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\CMS\WireframeExample\Controller;
+namespace TYPO3\CMS\GridExample\Controller;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -26,9 +26,9 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Mvc\Web\Routing\UriBuilder;
 use TYPO3\CMS\Recordlist\RecordList\DatabaseRecordList;
-use TYPO3\CMS\Wireframe\Form\Data\GridContainerGroup;
-use TYPO3\CMS\Wireframe\Form\Data\Group\ContentContainer;
-use TYPO3\CMS\Wireframe\Form\Data\Group\ContentElement\Definitions;
+use TYPO3\CMS\Grid\Form\Data\GridContainerGroup;
+use TYPO3\CMS\Grid\Form\Data\Group\ContentContainer;
+use TYPO3\CMS\Grid\Form\Data\Group\ContentElement\Definitions;
 
 /**
  * Controller for Web > Post module
@@ -36,7 +36,7 @@ use TYPO3\CMS\Wireframe\Form\Data\Group\ContentElement\Definitions;
 class LayoutController extends ActionController
 {
 
-    const CONTAINER_TABLE = 'tx_wireframe_example_domain_model_post';
+    const CONTAINER_TABLE = 'tx_grid_example_domain_model_post';
 
     /**
      * @var TranslationConfigurationProvider
@@ -141,7 +141,7 @@ class LayoutController extends ActionController
                         ]
                     )
                 )
-                ->setTitle($this->getLanguageService()->sL('LLL:EXT:wireframe_example/Resources/Private/Language/Classes/Controller/layout_controller:button.create'))
+                ->setTitle($this->getLanguageService()->sL('LLL:EXT:grid_example/Resources/Private/Language/Classes/Controller/layout_controller:button.create'))
                 ->setIcon($this->view->getModuleTemplate()->getIconFactory()->getIcon('actions-page-new', Icon::SIZE_SMALL))
         );
     }
@@ -285,8 +285,8 @@ class LayoutController extends ActionController
 
         $formResultCompiler->addCssFiles();
 
-        $this->view->getModuleTemplate()->getView()->setLayoutRootPaths(['EXT:wireframe/Resources/Private/Layouts']);
-        $this->view->getModuleTemplate()->getView()->setTemplateRootPaths(['EXT:wireframe/Resources/Private/Templates']);
+        $this->view->getModuleTemplate()->getView()->setLayoutRootPaths(['EXT:grid/Resources/Private/Layouts']);
+        $this->view->getModuleTemplate()->getView()->setTemplateRootPaths(['EXT:grid/Resources/Private/Templates']);
 
         $this->view->getModuleTemplate()->getView()->assign(
             'sidebar',
@@ -343,7 +343,7 @@ class LayoutController extends ActionController
                         ]
                     )
                 )
-                ->setTitle($this->getLanguageService()->sL('LLL:EXT:wireframe_example/Resources/Private/Language/Classes/Controller/layout_controller:button.edit'))
+                ->setTitle($this->getLanguageService()->sL('LLL:EXT:grid_example/Resources/Private/Language/Classes/Controller/layout_controller:button.edit'))
                 ->setIcon($this->view->getModuleTemplate()->getIconFactory()->getIcon('actions-page-open', Icon::SIZE_SMALL)),
             ButtonBar::BUTTON_POSITION_LEFT,
             2
