@@ -318,7 +318,7 @@ class LayoutController extends ActionController
                     )
                 ))
                 ->setTitle($this->getLanguageService()->sL('LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.close'))
-                ->setIcon($this->view->getModuleTemplate()->getIconFactory()->getIcon('actions-document-close', Icon::SIZE_SMALL))
+                ->setIcon($this->view->getModuleTemplate()->getIconFactory()->getIcon('actions-close', Icon::SIZE_SMALL))
         );
         $buttonBar->addButton(
             $buttonBar->makeLinkButton()
